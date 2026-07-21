@@ -42,9 +42,10 @@
         <p class="eyebrow"><span class="dot dot-live"></span>SYS.001 &nbsp;·&nbsp; ONLINE</p>
         <h1>Zara Ali</h1>
         <p class="hero-role">AI Engineering Student — Autonomous&nbsp;Systems &amp; Adversarial&nbsp;ML Research</p>
-        <p class="hero-desc">I build and break AI systems in the same breath: training models that drive
-        autonomous vehicles, then designing the adversarial attacks and detectors that keep them honest.
-        Currently co-authoring research on parallel LLM inference and sensor-attack detection at FAST-NUCES.</p>
+        <p class="hero-desc">I design and evaluate AI systems for autonomous platforms, working on both sides
+        of the problem: training the models that power autonomous vehicles, and building the adversarial
+        attacks and anomaly detectors that verify their reliability. Currently co-authoring research on
+        parallel LLM inference and sensor-attack detection at FAST-NUCES.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
           <a href="Zara_Ali_AI_Engineer_Resume.pdf" class="btn btn-ghost" download>Download CV ↓</a>
@@ -100,19 +101,20 @@
   <section class="section" id="about">
     <div class="section-inner">
       <p class="section-eyebrow">SYS.002 — ABOUT</p>
-      <h2 class="section-title">Trained on theory, tested against attackers.</h2>
+      <h2 class="section-title">Grounded in theory, validated against real-world threats.</h2>
       <div class="about-grid">
         <p class="about-copy">
-          I'm an AI Engineering student at FAST-NUCES (6th semester) working across machine learning, deep
-          learning, NLP, computer vision, and generative AI. My research centers on making autonomous systems
-          trustworthy: distributing LLM inference across autonomous vehicle and UAV swarms without blowing the
-          latency budget, and building the anomaly detectors that catch a spoofed camera or LiDAR feed before it
-          reaches a control loop.
+          I am an AI Engineering student at FAST-NUCES (sixth semester), working across machine learning, deep
+          learning, natural language processing, computer vision, and generative AI. My research focuses on the
+          reliability of autonomous systems: distributing LLM inference across autonomous vehicle and UAV swarms
+          within strict latency constraints, and developing anomaly detectors capable of identifying a spoofed
+          camera or LiDAR feed before it reaches a control loop.
         </p>
         <p class="about-copy">
-          Outside research, I ship — from a scikit-learn game bot that plays Street Fighter II in real time, to
-          RAG-and-tooling chatbots wired into CRMs over WebSockets. I'm comfortable owning a build end to end:
-          data collection, model training, system design, and the Docker container it ships in.
+          Beyond research, I deliver complete, production-oriented systems — from a scikit-learn game bot that
+          plays Street Fighter II in real time, to RAG-enabled chatbots integrated with CRMs over WebSockets. I am
+          comfortable owning a project end to end: data collection, model training, system design, and containerized
+          deployment.
         </p>
       </div>
       <div class="about-facts">
@@ -136,7 +138,7 @@
   <section class="section section-alt" id="research">
     <div class="section-inner">
       <p class="section-eyebrow">SYS.003 — RESEARCH LOG</p>
-      <h2 class="section-title">Two papers in flight.</h2>
+      <h2 class="section-title">Two research papers currently in progress.</h2>
 
       <article class="research-card">
         <div class="research-head">
@@ -145,9 +147,9 @@
         </div>
         <p class="research-sub">Unified Parallel LLM Framework for Autonomous Vehicles &amp; UAV Swarms</p>
         <ul class="research-points">
-          <li>Applying MPI tensor parallelism to LLM inference across 4–8 nodes, targeting ≥2x latency reduction for real-time AV and UAV control.</li>
-          <li>Architecting a CNN Adversarial Input Guard — an unsupervised convolutional autoencoder — detecting 7 documented sensor attack vectors (RGB, LiDAR, GPS/IMU, DVS) at ≥95% accuracy and ≤5% false-positive rate.</li>
-          <li>Implementing adaptive load balancing and a MapReduce scenario-generation pipeline, targeting a 3x speedup over sequential baselines.</li>
+          <li>Applying MPI tensor parallelism to distribute LLM inference across 4–8 nodes, targeting a ≥2x reduction in latency for real-time autonomous vehicle and UAV control.</li>
+          <li>Designing a CNN Adversarial Input Guard — an unsupervised convolutional autoencoder — to detect 7 documented sensor attack vectors (RGB, LiDAR, GPS/IMU, DVS) at ≥95% accuracy with a false-positive rate of ≤5%.</li>
+          <li>Implementing adaptive load balancing alongside a MapReduce-based scenario-generation pipeline, targeting a threefold improvement over sequential baselines.</li>
         </ul>
         <div class="tag-row"><span class="tag">MPI</span><span class="tag">Tensor Parallelism</span><span class="tag">Autonomous Vehicles</span><span class="tag">UAV Swarms</span></div>
       </article>
@@ -159,9 +161,9 @@
         </div>
         <p class="research-sub">Reproducing EfficientAD student–teacher anomaly detection for autonomous vehicle sensors</p>
         <ul class="research-points">
-          <li>Reproduced the EfficientAD pipeline to detect 7 cyberattack types across RGB and DVS sensor modalities.</li>
-          <li>Achieved 100% detection accuracy on 3 RGB attack types; 83.1% overall RGB accuracy with AUROC 0.903 and F1 89.4%.</li>
-          <li>Ran the full study under a hardware-constrained 0.2 GB VRAM budget using rigorous synthetic data generation.</li>
+          <li>Reproduced the EfficientAD pipeline to detect seven cyberattack types across RGB and DVS sensor modalities.</li>
+          <li>Achieved 100% detection accuracy on three RGB attack types, with 83.1% overall RGB accuracy, an AUROC of 0.903, and an F1 score of 89.4%.</li>
+          <li>Conducted the full study under a hardware-constrained 0.2 GB VRAM budget, using rigorous synthetic data generation methods.</li>
         </ul>
         <div class="tag-row"><span class="tag">EfficientAD</span><span class="tag">Anomaly Detection</span><span class="tag">Sensor Security</span></div>
       </article>
@@ -172,43 +174,43 @@
   <section class="section" id="projects">
     <div class="section-inner">
       <p class="section-eyebrow">SYS.004 — BUILD LOG</p>
-      <h2 class="section-title">Featured projects.</h2>
+      <h2 class="section-title">Selected projects.</h2>
       <div class="project-grid">
 
         <article class="project-card">
           <h3>LLM-Powered Conversational AI (RAG + Tooling)</h3>
-          <p>A LangChain-style assistant combining a FAISS/Chroma RAG pipeline, CRM/API tool orchestration, WebSocket streaming, and async FastAPI serving — with Whisper STT and Piper TTS for voice, shipped in Docker.</p>
+          <p>A LangChain-style assistant combining a FAISS/Chroma retrieval pipeline, CRM and API tool orchestration, WebSocket-based streaming, and asynchronous FastAPI serving, with Whisper speech-to-text and Piper text-to-speech for voice interaction, deployed via Docker.</p>
           <div class="tag-row"><span class="tag">RAG</span><span class="tag">FastAPI</span><span class="tag">WebSockets</span><span class="tag">Whisper</span><span class="tag">Docker</span></div>
         </article>
 
         <article class="project-card">
           <h3>Enterprise AI Outreach System</h3>
           <p class="badge-inline">In Progress</p>
-          <p>Automating personalized executive outreach with Hugging Face models and LangChain — intelligent, contract-oriented pipelines with vector-based contextual personalization.</p>
+          <p>An AI-driven system for automating personalized executive outreach, built on Hugging Face models and LangChain, with contract-oriented pipelines and vector-based contextual personalization.</p>
           <div class="tag-row"><span class="tag">LangChain</span><span class="tag">Hugging Face</span><span class="tag">Vector DB</span></div>
         </article>
 
         <article class="project-card">
           <h3>Street Fighter II — ML Game Controller</h3>
-          <p>An MLPClassifier trained on live game state (position, health, actions) replaces rule-based bot logic, predicting and executing moves from real-time gameplay data.</p>
+          <p>An MLPClassifier trained on live game state data (position, health, and actions) replaces rule-based bot logic, predicting and executing in-game moves from real-time inference.</p>
           <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Real-time Inference</span></div>
         </article>
 
         <article class="project-card">
           <h3>Coffee Shop Management — Database Design</h3>
-          <p>A relational database for a full ordering system, with SQL used end to end for schema modeling, querying, and optimization.</p>
+          <p>A relational database designed for a complete ordering system, with SQL applied throughout for schema modeling, querying, and optimization.</p>
           <div class="tag-row"><span class="tag">SQL</span><span class="tag">Database Design</span></div>
         </article>
 
         <article class="project-card">
           <h3>Customer Reviews Dashboard</h3>
-          <p>Scraped and analyzed ~1,800 customer reviews with Selenium, NumPy, and Pandas, surfacing sentiment trends through a Streamlit interface.</p>
+          <p>An automated dashboard analyzing approximately 1,800 customer reviews, using Selenium for data collection and NumPy and Pandas for analysis, with sentiment trends presented through a Streamlit interface.</p>
           <div class="tag-row"><span class="tag">Pandas</span><span class="tag">Selenium</span><span class="tag">Streamlit</span></div>
         </article>
 
         <article class="project-card">
           <h3>Game Boy–Style Mini-Game Suite</h3>
-          <p>Snake, Hangman, and Wordle rebuilt in C++ with SFML — modular game architecture and a dedicated windowed UI.</p>
+          <p>Snake, Hangman, and Wordle implemented in C++ using the SFML graphics library, with a modular architecture and a dedicated windowed interface.</p>
           <div class="tag-row"><span class="tag">C++</span><span class="tag">SFML</span></div>
         </article>
 
@@ -220,7 +222,7 @@
   <section class="section section-alt" id="experience">
     <div class="section-inner">
       <p class="section-eyebrow">SYS.005 — EXPERIENCE LOG</p>
-      <h2 class="section-title">Where the work happened.</h2>
+      <h2 class="section-title">Professional and volunteer experience.</h2>
 
       <div class="timeline">
         <div class="timeline-entry">
@@ -228,7 +230,7 @@
           <div class="timeline-content">
             <h3>Software Engineer Intern</h3>
             <p class="timeline-org">Telerelation</p>
-            <p>Hands-on work with MongoDB and Excel macros, applying practical problem-solving in a live engineering environment.</p>
+            <p>Gained hands-on experience with MongoDB and Excel macros, applying practical problem-solving skills within a professional engineering environment.</p>
           </div>
         </div>
         <div class="timeline-entry">
@@ -236,16 +238,16 @@
           <div class="timeline-content">
             <h3>Volunteer</h3>
             <p class="timeline-org">Saaya Association, Islamabad</p>
-            <p>Ran outreach events and inclusion programs for individuals with disabilities, plus introductory AI-tool workshops to widen accessible-tech literacy.</p>
+            <p>Organized outreach events and inclusion programs for individuals with disabilities, and conducted introductory AI-tool workshops to promote accessible technology literacy.</p>
           </div>
         </div>
         <div class="timeline-entry">
+          <div class="timeline-date">Mar 2023 – May 2023</div>
           <div class="timeline-content">
             <h3>Management Trainee</h3>
             <p class="timeline-org">Flood Relief, Hyderabad</p>
-            <p>Coordinated two large-scale relief events and led a 6-member volunteer team mobilizing donations and support for displaced communities.</p>
+            <p>Coordinated two large-scale community support events for flood-affected regions and led a six-member volunteer team mobilizing donations and relief support for displaced communities.</p>
           </div>
-          <div class="timeline-date">Mar 2023 – May 2023</div>
         </div>
       </div>
     </div>
@@ -289,8 +291,8 @@
   <section class="section contact-section" id="contact">
     <div class="section-inner">
       <p class="section-eyebrow">SYS.007 — CONTACT</p>
-      <h2 class="section-title">Let's build something reliable.</h2>
-      <p class="contact-sub">Open to AI engineering, ML research, and automation roles and collaborations.</p>
+      <h2 class="section-title">Get in touch.</h2>
+      <p class="contact-sub">Open to opportunities and collaborations in AI engineering, machine learning research, and automation.</p>
       <div class="contact-grid">
         <a class="contact-item" href="mailto:zaraale5@gmail.com">
           <span class="contact-label">Email</span>
