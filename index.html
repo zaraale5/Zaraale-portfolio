@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zara Ali — AI Engineering Student</title>
+<meta name="description" content="Zara Ali — AI Engineering student specializing in autonomous systems, adversarial ML, and applied research on sensor security." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+
+<nav id="main-nav" class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">ZARA ALI<span class="brand-dot">_</span></a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#research" class="nav-link">Research</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Log</a></li>
+      <li><a href="#skills" class="nav-link">Stack</a></li>
+      <li><a href="#contact" class="nav-link cta-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot dot-live"></span>SYS.001 &nbsp;·&nbsp; ONLINE</p>
+        <h1>Zara Ali</h1>
+        <p class="hero-role">AI Engineering Student — Autonomous&nbsp;Systems &amp; Adversarial&nbsp;ML Research</p>
+        <p class="hero-desc">I build and break AI systems in the same breath: training models that drive
+        autonomous vehicles, then designing the adversarial attacks and detectors that keep them honest.
+        Currently co-authoring research on parallel LLM inference and sensor-attack detection at FAST-NUCES.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="Zara_Ali_AI_Engineer_Resume.pdf" class="btn btn-ghost" download>Download CV ↓</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/Zaraalee" target="_blank" rel="noopener">github.com/Zaraalee</a>
+          <span class="sep">·</span>
+          <a href="mailto:zaraale5@gmail.com">zaraale5@gmail.com</a>
+          <span class="sep">·</span>
+          <span>Islamabad, PK</span>
+        </div>
+      </div>
+
+      <div class="hero-scope" role="img" aria-label="Sensor waveform with a detected anomaly, illustrating anomaly-detection research">
+        <div class="scope-frame">
+          <div class="scope-header">
+            <span>CH.02 — SENSOR_FEED</span>
+            <span class="scope-status">ANOMALY DETECTED</span>
+          </div>
+          <svg viewBox="0 0 640 220" class="scope-svg" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="traceFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#4CC9C0" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#4CC9C0" stop-opacity="1"/>
+              </linearGradient>
+            </defs>
+            <g class="scope-gridlines">
+              <line x1="0" y1="55" x2="640" y2="55"></line>
+              <line x1="0" y1="110" x2="640" y2="110"></line>
+              <line x1="0" y1="165" x2="640" y2="165"></line>
+            </g>
+            <path class="scope-trace-base" d="M0,110 L30,108 L60,112 L90,109 L120,111 L150,108 L180,112 L210,109
+              L240,110 L260,60 L275,180 L290,40 L305,150 L320,90 L335,110
+              L365,108 L395,112 L425,109 L455,111 L485,108 L515,112 L545,109 L575,110 L610,109 L640,110"></path>
+            <circle class="anomaly-marker" cx="290" cy="40" r="5"></circle>
+          </svg>
+          <div class="scope-footer">
+            <span class="mono-readout">CONF: <b>95.2%</b></span>
+            <span class="mono-readout">MODALITY: <b>RGB / DVS</b></span>
+            <span class="mono-readout">AUROC: <b>0.903</b></span>
+          </div>
+        </div>
+        <div class="stat-strip">
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Active research papers</span></div>
+          <div class="stat"><span class="stat-num">9</span><span class="stat-label">Shipped projects</span></div>
+          <div class="stat"><span class="stat-num">95%+</span><span class="stat-label">Attack detection accuracy</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.002 — ABOUT</p>
+      <h2 class="section-title">Trained on theory, tested against attackers.</h2>
+      <div class="about-grid">
+        <p class="about-copy">
+          I'm an AI Engineering student at FAST-NUCES (6th semester) working across machine learning, deep
+          learning, NLP, computer vision, and generative AI. My research centers on making autonomous systems
+          trustworthy: distributing LLM inference across autonomous vehicle and UAV swarms without blowing the
+          latency budget, and building the anomaly detectors that catch a spoofed camera or LiDAR feed before it
+          reaches a control loop.
+        </p>
+        <p class="about-copy">
+          Outside research, I ship — from a scikit-learn game bot that plays Street Fighter II in real time, to
+          RAG-and-tooling chatbots wired into CRMs over WebSockets. I'm comfortable owning a build end to end:
+          data collection, model training, system design, and the Docker container it ships in.
+        </p>
+      </div>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Education</span>
+          <span class="fact-value">B.S. Artificial Intelligence, FAST-NUCES — 2023–Present</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Urdu (native) · English (C2) · Sindhi (B2)</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Certifications</span>
+          <span class="fact-value">Data Science Math Skills — Duke (Coursera), 2022 · AI in Healthcare — RCSI, 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section section-alt" id="research">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.003 — RESEARCH LOG</p>
+      <h2 class="section-title">Two papers in flight.</h2>
+
+      <article class="research-card">
+        <div class="research-head">
+          <h3>UniParaAI</h3>
+          <span class="badge badge-progress">In Progress</span>
+        </div>
+        <p class="research-sub">Unified Parallel LLM Framework for Autonomous Vehicles &amp; UAV Swarms</p>
+        <ul class="research-points">
+          <li>Applying MPI tensor parallelism to LLM inference across 4–8 nodes, targeting ≥2x latency reduction for real-time AV and UAV control.</li>
+          <li>Architecting a CNN Adversarial Input Guard — an unsupervised convolutional autoencoder — detecting 7 documented sensor attack vectors (RGB, LiDAR, GPS/IMU, DVS) at ≥95% accuracy and ≤5% false-positive rate.</li>
+          <li>Implementing adaptive load balancing and a MapReduce scenario-generation pipeline, targeting a 3x speedup over sequential baselines.</li>
+        </ul>
+        <div class="tag-row"><span class="tag">MPI</span><span class="tag">Tensor Parallelism</span><span class="tag">Autonomous Vehicles</span><span class="tag">UAV Swarms</span></div>
+      </article>
+
+      <article class="research-card">
+        <div class="research-head">
+          <h3>Cyberattack Resilience of AV Sensor Systems</h3>
+          <span class="badge badge-progress">Reproducibility Study</span>
+        </div>
+        <p class="research-sub">Reproducing EfficientAD student–teacher anomaly detection for autonomous vehicle sensors</p>
+        <ul class="research-points">
+          <li>Reproduced the EfficientAD pipeline to detect 7 cyberattack types across RGB and DVS sensor modalities.</li>
+          <li>Achieved 100% detection accuracy on 3 RGB attack types; 83.1% overall RGB accuracy with AUROC 0.903 and F1 89.4%.</li>
+          <li>Ran the full study under a hardware-constrained 0.2 GB VRAM budget using rigorous synthetic data generation.</li>
+        </ul>
+        <div class="tag-row"><span class="tag">EfficientAD</span><span class="tag">Anomaly Detection</span><span class="tag">Sensor Security</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.004 — BUILD LOG</p>
+      <h2 class="section-title">Featured projects.</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>LLM-Powered Conversational AI (RAG + Tooling)</h3>
+          <p>A LangChain-style assistant combining a FAISS/Chroma RAG pipeline, CRM/API tool orchestration, WebSocket streaming, and async FastAPI serving — with Whisper STT and Piper TTS for voice, shipped in Docker.</p>
+          <div class="tag-row"><span class="tag">RAG</span><span class="tag">FastAPI</span><span class="tag">WebSockets</span><span class="tag">Whisper</span><span class="tag">Docker</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Enterprise AI Outreach System</h3>
+          <p class="badge-inline">In Progress</p>
+          <p>Automating personalized executive outreach with Hugging Face models and LangChain — intelligent, contract-oriented pipelines with vector-based contextual personalization.</p>
+          <div class="tag-row"><span class="tag">LangChain</span><span class="tag">Hugging Face</span><span class="tag">Vector DB</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Street Fighter II — ML Game Controller</h3>
+          <p>An MLPClassifier trained on live game state (position, health, actions) replaces rule-based bot logic, predicting and executing moves from real-time gameplay data.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Real-time Inference</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Coffee Shop Management — Database Design</h3>
+          <p>A relational database for a full ordering system, with SQL used end to end for schema modeling, querying, and optimization.</p>
+          <div class="tag-row"><span class="tag">SQL</span><span class="tag">Database Design</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Customer Reviews Dashboard</h3>
+          <p>Scraped and analyzed ~1,800 customer reviews with Selenium, NumPy, and Pandas, surfacing sentiment trends through a Streamlit interface.</p>
+          <div class="tag-row"><span class="tag">Pandas</span><span class="tag">Selenium</span><span class="tag">Streamlit</span></div>
+        </article>
+
+        <article class="project-card">
+          <h3>Game Boy–Style Mini-Game Suite</h3>
+          <p>Snake, Hangman, and Wordle rebuilt in C++ with SFML — modular game architecture and a dedicated windowed UI.</p>
+          <div class="tag-row"><span class="tag">C++</span><span class="tag">SFML</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.005 — EXPERIENCE LOG</p>
+      <h2 class="section-title">Where the work happened.</h2>
+
+      <div class="timeline">
+        <div class="timeline-entry">
+          <div class="timeline-date">Aug 2025 – Sep 2025</div>
+          <div class="timeline-content">
+            <h3>Software Engineer Intern</h3>
+            <p class="timeline-org">Telerelation</p>
+            <p>Hands-on work with MongoDB and Excel macros, applying practical problem-solving in a live engineering environment.</p>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">Mar 2025 – May 2025</div>
+          <div class="timeline-content">
+            <h3>Volunteer</h3>
+            <p class="timeline-org">Saaya Association, Islamabad</p>
+            <p>Ran outreach events and inclusion programs for individuals with disabilities, plus introductory AI-tool workshops to widen accessible-tech literacy.</p>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-content">
+            <h3>Management Trainee</h3>
+            <p class="timeline-org">Flood Relief, Hyderabad</p>
+            <p>Coordinated two large-scale relief events and led a 6-member volunteer team mobilizing donations and support for displaced communities.</p>
+          </div>
+          <div class="timeline-date">Mar 2023 – May 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.006 — STACK</p>
+      <h2 class="section-title">Skills &amp; technologies.</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>Python, C++, C#, HTML, CSS, JavaScript, SQL, React</p>
+        </div>
+        <div class="skill-group">
+          <h3>AI / ML</h3>
+          <p>scikit-learn, PyTorch (distributed), NumPy, Pandas, TensorFlow, LangChain, Streamlit</p>
+        </div>
+        <div class="skill-group">
+          <h3>AI Domains</h3>
+          <p>Deep Learning, NLP, Computer Vision, Generative AI, Agentic AI, Adversarial ML, Reinforcement Learning, Anomaly Detection</p>
+        </div>
+        <div class="skill-group">
+          <h3>Systems</h3>
+          <p>MPI Tensor Parallelism, MapReduce, Adaptive Load Balancing, Distributed Inference</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <p>Selenium, SFML, Docker, Git, Google Workspace, Canva</p>
+        </div>
+        <div class="skill-group">
+          <h3>Soft skills</h3>
+          <p>Research Communication, Problem Solving, Attention to Detail, Public Speaking, Team Leadership</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow">SYS.007 — CONTACT</p>
+      <h2 class="section-title">Let's build something reliable.</h2>
+      <p class="contact-sub">Open to AI engineering, ML research, and automation roles and collaborations.</p>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:zaraale5@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">zaraale5@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+923320242561">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+92 332 0242561</span>
+        </a>
+        <a class="contact-item" href="https://github.com/Zaraalee" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/Zaraalee</span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Islamabad, Pakistan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Zara Ali. All rights reserved.</span>
+    <span class="footer-status"><span class="dot dot-live"></span>SYS.OK</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
